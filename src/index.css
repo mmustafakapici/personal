@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://assets.website-files.com/6257adef93867e50d84d30e2/625eb604bb8605784489d361_Geist-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('https://assets.website-files.com/6257adef93867e50d84d30e2/625eb604bb8605784489d361_GeistMono-Regular.woff2') format('woff2');
+}
+
+:root {
+  --font-geist: 'Geist', sans-serif;
+  --font-geist-mono: 'GeistMono', monospace;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-geist);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  color-scheme: dark;
+}
